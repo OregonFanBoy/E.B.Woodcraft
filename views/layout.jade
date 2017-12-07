@@ -2,18 +2,44 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/bootstrap-grid.css')
-    link(rel='stylesheet', href='/stylesheets/bootstrap-grid.min.css')
-    link(rel='stylesheet', href='/stylesheets/bootstrap-reboot.css')
-    link(rel='stylesheet', href='/stylesheets/bootstrap-reboot-min.css')
-    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
-    link(rel='stylesheet', href='/stylesheets/bootstrap-min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css', integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb', crossorigin='anonymous')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/home.css')
 
-    script(type='text/javascript', src='/javascripts/bootstrap.bundle.js')
-    script(type='text/javascript', src='/javascripts/bootstrap.bundle.min.js')
-    script(type='text/javascript', src='/javascripts/bootstrap.js')
-    script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+    script(type='text/javascript', src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js', integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh', crossorigin='anonymous')
+    script(type='text/javascript', src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js', integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ', crossorigin='anonymous')
+
 
   body
-    block content
+    .header
+      .head-container
+        .logo-container
+          img(src="/images/EBWoodCraftLogo.png", alt="Title")
+          .head-container2
+          .triangle-left
+            .triangle-right
+        .head-container3
+
+        //Navigation bar menu
+        .navbar.navbar-expand-lg.navbar-light(style='background-color: #808080;')
+          a.navbar-brand(href='/') E.B. Woodcraft
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle.navigation')
+            span.navbar-toggler-icon
+          .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav.mr-auto
+              li.nav-item.active
+                a.nav-link(href='#')
+                  | Home
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='#') Services
+              li.nav-item
+                a.nav-link(href='#') Gallery
+              li.nav-item
+                a.nav-link(href='#') About
+              li.nav-item
+                a.nav-link(href='#') Contact
+
+    block body
+    p Welcome to my home page #{title}
