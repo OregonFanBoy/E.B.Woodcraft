@@ -1,62 +1,87 @@
 extends layout
 
 block content
-  h3(style='padding: 15px;') Welcome to my home page #{title}
-  p(style='padding-left: 20px;')
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
-    | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
-    | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
-    | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
-    | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
-    br
-    br
-    | Mauris erat turpis, vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna,
-    | ac pretium dui. Nullam porttitor pulvinar ante, ultricies gravida felis rhoncus non. Nullam scelerisque,
-    | ipsum et molestie pharetra, risus leo scelerisque odio, sit amet dignissim lectus nisl eu tellus.
-    | Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum non maximus dignissim,
-    | laoreet nec felis.
+  link(href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css', rel='stylesheet')
+  link(href='https//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+  link(rel='stylesheet', href='/stylesheets/jslide.css')
+  script(type='text/javascript', src='//code.jquery.com/jquery-1.10.2.min.js')
+  #featured.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#featured', data-slide-to='0')
+      li(data-target='#featured', data-slide-to='1')
+      li(data-target='#featured', data-slide-to='2')
+    .carousel-inner(role='listbox')
+      .carousel-item.active
+        img.d-block.img-fluid(src='/images/wood2.jpg', alt='First slide')
+        .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+          div
 
-    br
-    br
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
-    | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
-    | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
-    | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
-    | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
-    br
-    br
-    | Mauris erat turpis, vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna,
-    | ac pretium dui. Nullam porttitor pulvinar ante, ultricies gravida felis rhoncus non. Nullam scelerisque,
-    | ipsum et molestie pharetra, risus leo scelerisque odio, sit amet dignissim lectus nisl eu tellus.
-    | Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum non maximus dignissim,
-    | laoreet nec felis.
-    br
-    br
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
-    | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
-    | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
-    | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
-    | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
-    br
-    br
-    | Suspendisse est risus, tincidunt eget facilisis at, varius vitae justo. Sed convallis,
-    | elit quis ornare scelerisque, magna turpis sagittis justo, vulputate finibus leo dui ac tortor.
-    | Cras odio lectus, aliquam ut eleifend id, blandit et nibh. Duis rhoncus lorem a enim bibendum,
-    | id congue elit volutpat. Aenean risus ante, viverra at congue ac, pretium ac mi.
-    | Nunc sodales non tellus at auctor. Curabitur feugiat vitae velit ac sagittis. Proin ante erat,
-    | imperdiet quis justo sit amet, lacinia porttitor tellus. Suspendisse potenti.
-    | Pellentesque vulputate eros risus, vitae posuere elit bibendum vel. Nulla non interdum tellus.
-    | Cras blandit nulla vel dolor lobortis, sit amet posuere urna sodales.
-    | Donec finibus nisl finibus nisl aliquam pellentesque. Sed arcu enim, pretium a dignissim eget, dignissim ut mi.
-    br
-    br
-    | Mauris erat turpis, vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna,
-    | ac pretium dui. Nullam porttitor pulvinar ante, ultricies gravida felis rhoncus non. Nullam scelerisque,
-    | ipsum et molestie pharetra, risus leo scelerisque odio, sit amet dignissim lectus nisl eu tellus.
-    | Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum non maximus dignissim,
-    | laoreet nec felis.
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
-    | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
-    | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
-    | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
-    | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
+          .text
+            h2.slider-caption-title(style='color: #D8C875;') Welcome to E.B. Woodcraft
+            p.slider-caption-details
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+
+      .carousel-item
+        img.d-block.img-fluid(src='/images/wood3.jpg', alt='First slide')
+        .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+          div
+
+          .text
+            h2.slider-caption-title(style='color: #72672D') Our Story
+            p.slider-caption-details
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+            a.button.slider-caption-button(href='/about') Learn more.
+      .carousel-item
+        img.d-block.img-fluid(src='/images/wood4.jpg', alt='First slide')
+        .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+          div
+
+          .text
+            h2.slider-caption-title Ask us a question
+            p.slider-caption-details
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+            a.button.slider-caption-button(href='/#') Ask here.
+    a.carousel-control-prev(href='#featured', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#featured', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+
+  .container(style='margin: 0px;')
+    h3(style='padding: 15px;') Title Head
+    p(style='padding-left: 20px;')
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
+      | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
+      | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
+      | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
+      | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
+      br
+      br
+      | Mauris erat turpis, vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna,
+      | ac pretium dui. Nullam porttitor pulvinar ante, ultricies gravida felis rhoncus non. Nullam scelerisque,
+      | ipsum et molestie pharetra, risus leo scelerisque odio, sit amet dignissim lectus nisl eu tellus.
+      | Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum non maximus dignissim,
+      | laoreet nec felis.
+
+      br
+      br
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
+      | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
+      | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
+      | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
+      | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
+      br
+      br
+      | Mauris erat turpis, vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna,
+      | ac pretium dui. Nullam porttitor pulvinar ante, ultricies gravida felis rhoncus non. Nullam scelerisque,
+      | ipsum et molestie pharetra, risus leo scelerisque odio, sit amet dignissim lectus nisl eu tellus.
+      | Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum non maximus dignissim,
+      | laoreet nec felis.
+      br
+      br
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
+      | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
+      | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
+      | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
+      | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.

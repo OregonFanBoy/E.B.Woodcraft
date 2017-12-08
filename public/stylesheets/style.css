@@ -22,3 +22,8 @@ a {
   width: 65%;
   height: 40%;
 }
+
+.slider{
+  border-bottom: 1px solid #D6D6D6;
+  height: 200px;
+}
