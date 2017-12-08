@@ -3,6 +3,7 @@
 body{
   padding: 0px;
   margin: 0px;
+  color: grey;
 }
 
 .header{
@@ -68,4 +69,41 @@ border-left: 20px solid #FFB366;
 border-bottom: 10px solid transparent;
 margin-left: 30px;
 margin-top: -10px;
+}
+
+footer{
+
+  background-color: #4D4D4D;
+  padding: 40px 0 20px 0;
+  margin-bottom: 1px;
+  font-size: 15px;
+}
+
+#footersub{
+  background-color: #4D4D4D;
+}
+
+.footersub .row{
+  word-wrap: break-word;
+}
+
+ .footer-sub p{
+  color: grey;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.address a{
+  color: #FFB366;
+  display: block;
+}
+
+footer h4{
+  color: #FFFFFF;
+}
+
+footer ul li a{
+  color: #7a7874;
+  font-size: 15px;
+  line-height: 24px;
 }
