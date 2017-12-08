@@ -29,7 +29,7 @@ html
           .collapse.navbar-collapse#navbarSupportedContent
             ul.navbar-nav.mr-auto
               li.nav-item.active
-                a.nav-link(href='#')
+                a.nav-link(href='/')
                   | Home
                   span.sr-only (current)
               li.nav-item
@@ -37,59 +37,12 @@ html
               li.nav-item
                 a.nav-link(href='#') Gallery
               li.nav-item
-                a.nav-link(href='#') About
+                a.nav-link(href='/about') About
               li.nav-item
                 a.nav-link(href='#') Contact
 
 
-    h3(style='padding: 15px;') Welcome to my home page #{title}
-    p(style='padding-left: 20px;')
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
-      | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
-      | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
-      | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
-      | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
-      br
-      br
-      | Mauris erat turpis, vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna,
-      | ac pretium dui. Nullam porttitor pulvinar ante, ultricies gravida felis rhoncus non. Nullam scelerisque,
-      | ipsum et molestie pharetra, risus leo scelerisque odio, sit amet dignissim lectus nisl eu tellus.
-      | Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum non maximus dignissim,
-      | laoreet nec felis.
-
-      br
-      br
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
-      | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
-      | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
-      | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
-      | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
-      br
-      br
-      | Mauris erat turpis, vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna,
-      | ac pretium dui. Nullam porttitor pulvinar ante, ultricies gravida felis rhoncus non. Nullam scelerisque,
-      | ipsum et molestie pharetra, risus leo scelerisque odio, sit amet dignissim lectus nisl eu tellus.
-      | Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum non maximus dignissim,
-      | laoreet nec felis.
-      br
-      br
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie.
-      | Sed eget nisi convallis, dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus
-      | placerat faucibus. Nulla auctor fermentum mollis. Phasellus in felis tincidunt, volutpat dui vitae,
-      | varius metus. In et porttitor tortor, consequat lacinia quam. Phasellus mollis sed quam eget efficitur.
-      | Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus.
-      br
-      br
-      | Suspendisse est risus, tincidunt eget facilisis at, varius vitae justo. Sed convallis,
-      | elit quis ornare scelerisque, magna turpis sagittis justo, vulputate finibus leo dui ac tortor.
-      | Cras odio lectus, aliquam ut eleifend id, blandit et nibh. Duis rhoncus lorem a enim bibendum, 
-      | id congue elit volutpat. Aenean risus ante, viverra at congue ac, pretium ac mi.
-      | Nunc sodales non tellus at auctor. Curabitur feugiat vitae velit ac sagittis. Proin ante erat,
-      | imperdiet quis justo sit amet, lacinia porttitor tellus. Suspendisse potenti.
-      | Pellentesque vulputate eros risus, vitae posuere elit bibendum vel. Nulla non interdum tellus.
-      | Cras blandit nulla vel dolor lobortis, sit amet posuere urna sodales.
-      | Donec finibus nisl finibus nisl aliquam pellentesque. Sed arcu enim, pretium a dignissim eget, dignissim ut mi.
-
+    block content
 
 
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
@@ -106,13 +59,13 @@ html
             h4 Quick links
             ul
               li
-                a(href='/#') Home
+                a(href='/') Home
               li
                 a(href='/#') Services
               li
                 a(href='/#') Gallery
               li
-                a(href='/#') About
+                a(href='/about') About
               li
                 a(href='/#') Contact
           .col-sm-4
