@@ -2,51 +2,65 @@ extends layout
 
 block content
   link(href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css', rel='stylesheet')
-  link(href='https//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+  link(href='https//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet')
   link(rel='stylesheet', href='/stylesheets/jslide.css')
   script(type='text/javascript', src='//code.jquery.com/jquery-1.10.2.min.js')
-  #featured.carousel.slide(data-ride='carousel')
-    ol.carousel-indicators
-      li.active(data-target='#featured', data-slide-to='0')
-      li(data-target='#featured', data-slide-to='1')
-      li(data-target='#featured', data-slide-to='2')
-    .carousel-inner(role='listbox')
-      .carousel-item.active
-        img.d-block.img-fluid(src='/images/wood2.jpg', alt='First slide')
-        .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
-          div
+  .carousel-container
+    #featured.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#featured', data-slide-to='0')
+        li(data-target='#featured', data-slide-to='1')
+        li(data-target='#featured', data-slide-to='2')
+        li(data-target='#featured', data-slide-to='3')
+      .carousel-inner(role='listbox')
+        .carousel-item.active
+          img.d-block.img-fluid(src='/images/slide1.jpg', alt='First slide')
+          .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+            div
 
-          .text
-            h2.slider-caption-title(style='color: #D8C875;') Welcome to E.B. Woodcraft
-            p.slider-caption-details
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+            .text
+              h2.slider-caption-title(style='color: #a37700;') Welcome to E.B. Woodcraft
+              p.slider-caption-details(style='color: #9b9a98')
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
 
-      .carousel-item
-        img.d-block.img-fluid(src='/images/wood3.jpg', alt='First slide')
-        .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
-          div
+        .carousel-item
+          img.d-block.img-fluid(src='/images/slide2.jpg', alt='Second slide')
+          .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+            div
+            .text
+              h2.slider-caption-title(style='color: #dbdad9;') Our Story
+              p.slider-caption-details(style='color: #FFFFFF;')
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+              a.button.slider-caption-button(href='/about') Learn more
+        .carousel-item
+          img.d-block.img-fluid(src='/images/slide3.jpg', alt='Third slide')
+          .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+            div
 
-          .text
-            h2.slider-caption-title(style='color: #72672D') Our Story
-            p.slider-caption-details
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
-            a.button.slider-caption-button(href='/about') Learn more.
-      .carousel-item
-        img.d-block.img-fluid(src='/images/wood4.jpg', alt='First slide')
-        .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
-          div
+            .text
+              h2.slider-caption-title Ask us a question
+              p.slider-caption-details
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+              a.button.slider-caption-button(href='/#') Ask here
 
-          .text
-            h2.slider-caption-title Ask us a question
-            p.slider-caption-details
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
-            a.button.slider-caption-button(href='/#') Ask here.
-    a.carousel-control-prev(href='#featured', role='button', data-slide='prev')
-      span.carousel-control-prev-icon(aria-hidden='true')
-      span.sr-only Previous
-    a.carousel-control-next(href='#featured', role='button', data-slide='next')
-      span.carousel-control-next-icon(aria-hidden='true')
-      span.sr-only Next
+        .carousel-item
+          img.d-block.im-fluid(src='/images/slide4.jpg' alt='Fourth slide')
+          .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+            div
+
+            .text
+              h2.slider-caption-title View Our Product
+              p.slider-caption-details
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+              a.button.slider-caption-button(href='/#') View now
+
+
+      a.carousel-control-prev(href='#featured', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#featured', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
 
   .container(style='margin: 0px;')
     h3(style='padding: 15px;') Title Head

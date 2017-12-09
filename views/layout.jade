@@ -22,7 +22,8 @@ html
         .head-container3
 
         //Navigation bar menu
-        .navbar.navbar-expand-lg.navbar-light(style='background-color: #808080;')
+        //Navigation bar menu is set to top most layer.
+        .navbar.navbar-expand-lg.navbar-light(style='background-color: #808080; z-index: 99999;')
           a.navbar-brand(href='/') E.B. Woodcraft
           button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle.navigation')
             span.navbar-toggler-icon
@@ -77,10 +78,20 @@ html
                 | 1234 Nort Drive
                 br
                 | Eagle Point, OR 97501
+                br
+                br
+                | Phone: (541)-XXX-XXX
+                br
               a(href='mailto:ebwoodcraft.eric@gmail.com') Email: ebwoodcraft.eric@gmail.com
     #footersub.footer-sub
       .container
-        .row
+        .row(style='word-wrap: break-word;')
+          .col-sm6.col-md-4.col-xs-12
+            ul
+              li
+                a(href='/#') Terms of Use
+              li
+                a(href='/#') Legal Page
           .col-sm6.col-md-4.col-xs-12
             p
               | &copy 2017 E.B. Woodcraft. All Rights Reserved.
