@@ -1,0 +1,52 @@
+.container-services{
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.service-header-description{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.item-service{
+  padding: 0px;
+  width: 400px;
+  height: 100%;
+  margin: 10px 30px 10px 30px;
+}
+
+.title-service{
+  word-break: normal;
+  font-family: verdana;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0 10px 5px;
+  text-align: left;
+}
+
+.content-service{
+  font-size: 16px;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.item-service p{
+  padding: 10px 0 0 10px;
+}
+
+.item-service p a{
+  color: orange;
+  font-weight: 700;
+}

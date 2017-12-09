@@ -27,3 +27,19 @@ a {
   border-bottom: 1px solid #D6D6D6;
   height: 200px;
 }
+
+.image-container img{
+  width: 100%;
+  height: 50vh;
+  padding-top: 6px;
+}
+
+table tr th{
+  margin: 0px 25px 0px 25px;
+  padding: 0px 25px 0px 25px;
+}
+
+table tr th p{
+  font-family: verdana;
+  font-size: 17px;
+}
