@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/jslide.css')
+  link(rel='stylesheet', href='/stylesheets/services.css')
+  //Picture header for "Our Services"
+  .carousel-inner(role='listbox')
+    .carousel-item.active
+      img.d-block.img-fluid(src='/images/wood6.jpg', alt='First slide')
+      .carousel-caption.d-none.d-block.d-flex.align-items-center(style='height: 100%')
+        div
+        .text
+          h2.slider-caption-title(style='color: #f2c354;') #{title}
+          p.slider-caption-details
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam alias porro vitae quos repudiandae repellat iure explicabo, omnis modi excepturi odio eos natus, quae quia.
+            //Body for list of services.
+  .container-services
+    .service-header-description(style="padding: 20px 100px 0px 100px; text-align: left;")
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus facilisis molestie. Sed eget nisi convallis,
+        | dignissim nisi eu, mollis nisl. Suspendisse efficitur magna id lacus placerat faucibus. Nulla auctor fermentum mollis.
+        | Phasellus in felis tincidunt, volutpat dui vitae, varius metus. In et porttitor tortor, consequat lacinia quam.
+        | Phasellus mollis sed quam eget efficitur. Sed mollis sollicitudin mi, non tempor nulla dapibus dapibus. Mauris erat turpis,
+        | vestibulum eu sapien nec, hendrerit tincidunt neque. Cras sed ultricies magna, ac pretium dui. Nullam porttitor pulvinar ante,
+        | ultricies gravida felis rhoncus non. Nullam scelerisque, ipsum et molestie pharetra, risus leo scelerisque odio, sit amet
+        | dignissim lectus nisl eu tellus. Mauris efficitur nisl ante. Nunc rutrum ornare risus sed gravida. In velit nisl, rutrum
+        | non maximus dignissim, laoreet nec felis.
+
+    .service-header-description
+      | Recent Projects
+    .item-service
+      .content-service
+        img(src='/images/wood2.jpg', alt='Wood 2')
+    .item-service
+      .content-service
+        img(src='/images/wood3.jpg', alt='Wood 3')
+    .item-service
+      .content-service
+        img(src='/images/wood4.jpg', alt='Wood 4')
