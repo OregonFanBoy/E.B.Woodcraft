@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+  //link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/stylesheets/gallery.css')
+  link(rel='stylesheet', href='https:////cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css')
+  script(type='text/javascript', src='https://code.jquery.com/jquery-1.10.2.min.js')
+  script(type='text/JavaScript', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
+
+  section
+    .container.gal-container
+      .col-md-12
+        .row
+            //Picture 1
+            .col-md-8.col-sm-12.co-xs-12.gal-item
+              .box
+                a(href='#', data-toggle='modal', data-target='#1')
+                  img(src='/images/wood5.jpg')
+                #1.modal.fade(tabindex='-1', role='dialog')
+                  .modal-dialog(role='document')
+                    .modal-content
+                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                      .modal-body
+                        img(src='/images/wood5.jpg')
+                      //.col-md-12.description
+                        //h4 This is a picture description
+
+            //Picture 2
+            .col-md-4.col-sm-6.co-xs-12.gal-item
+              .box
+                a(href='#', data-toggle='modal', data-target='#2')
+                  img(src='/images/wood2.jpg')
+                #2.modal.fade(tabindex='-1', role='dialog')
+                  .modal-dialog(role='document')
+                    .modal-content
+                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                      .modal-body
+                        img(src='images/wood2.jpg')
+
+            //Picture 3
+            .col-md-4.col-sm-6.co-xs-12.gal-item
+              .box
+                a(href='#', data-toggle='modal', data-target='#3')
+                  img(src='https://tympanus.net/Development/GammaGallery/images/medium/1.jpg')
+                #3.modal.fade(tabindex='-1', role='dialog')
+                  .modal-dialog(role='document')
+                    .modal-content
+                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                      .modal-body
+                        img(src='https://tympanus.net/Development/GammaGallery/images/medium/1.jpg')
+
+            //Picture 4
+            .col-md-6.col-sm-12.co-xs-12.gal-item
+              .box
+                a(href='#', data-toggle='modal', data-target='#4')
+                  img(src='/images/wood2.jpg')
+                #4.modal.fade(tabindex='-1', role='dialog')
+                  .modal-dialog(role='document')
+                    .modal-content
+                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                      .modal-body
+                        img(src='images/wood2.jpg')

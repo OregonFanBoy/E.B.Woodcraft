@@ -21,8 +21,8 @@ html
 
         //Navigation bar menu
         //Navigation bar menu is set to top most layer.
-        .navbar.navbar-expand-lg.navbar-light(style='background-color: #808080; z-index: 99999;')
-          a.navbar-brand(href='/') E.B. Woodcraft
+        .navbar.navbar-expand-lg.navbar-light(style='background-color: #808080; z-index: 999;')
+          a.navbar-brand(style='font-size: 21px;',href='/') E.B. Woodcraft
           button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle.navigation')
             span.navbar-toggler-icon
           .collapse.navbar-collapse#navbarSupportedContent
@@ -34,7 +34,7 @@ html
               li.nav-item
                 a.nav-link(href='/services') Services
               li.nav-item
-                a.nav-link(href='#') Gallery
+                a.nav-link(href='/gallery') Gallery
               li.nav-item
                 a.nav-link(href='/about') About
               li.nav-item
@@ -62,7 +62,7 @@ html
               li
                 a(href='/services') Services
               li
-                a(href='/#') Gallery
+                a(href='/gallery') Gallery
               li
                 a(href='/about') About
               li

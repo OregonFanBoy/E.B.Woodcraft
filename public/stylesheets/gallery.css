@@ -1,0 +1,216 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.gal-container{
+	padding: 12px;
+}
+
+.gal-item{
+	overflow: hidden;
+	padding: 3px;
+}
+
+.gal-item .box{
+	height: 350px;
+	overflow: hidden;
+}
+
+.box img{
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+	-o-object-fit:cover;
+}
+
+.gal-item a:focus{
+	outline: none;
+}
+
+.gal-item a:after{
+  content: "view";
+	font-family: 'Glyphicons Halflings';
+	opacity: 0;
+	background-color: rgba(154, 159, 168, 0.75);
+	position: absolute;
+	right: 25px;
+	left: 25px;
+	top: 10px;
+	bottom: 10px;
+	text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.gal-item a:hover:after{
+	opacity: 1;
+}
+
+.modal-open .gal-container .modal{
+	background-color: rgba(154,159,168,0.4);
+}
+
+.modal-open .gal-item .modal-body{
+  padding: 0px;
+  width: 250%;
+}
+
+
+.modal-open .gal-item button.close{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -755px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 24px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+.modal-open .gal-item button.close:focus{
+	outline: none;
+}
+.modal-open .gal-item button.close span{
+	position: relative;
+	top: -3px;
+	font-weight: lighter;
+	text-shadow:none;
+}
+.gal-container .modal-dialogue{
+  width: 80%;
+}
+
+.gal-container .description h4{
+	margin: 0;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 20px;
+}
+/* Handles pop up pictures.*/
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(3.1);
+    -moz-transform: scale(3.1);
+    -ms-transform: scale(3.1);
+    transform: scale(3.1);
+    top: 100px;
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    opacity: 1;
+}
+@media (min-width: 768px) {
+.gal-container .modal-dialog {
+    width: 55%;
+    margin: 50 auto;
+}
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height:250px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+  .gal-container .modal.fade .modal-dialog {
+    margin-left: 25px;
+    margin-top: 75px;
+  }
+
+  .modal-open .gal-item .modal-body{
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .gal-container .modal.fade .modal-dialog{
+    margin-left: 75px;
+    margin-top: 75px;
+  }
+  .modal-open .gal-item .modal-body{
+    padding: 0px;
+    width: 150%;
+  }
+}
+
+@media (min-width: 992px) {
+  .gal-container .modal.fade .modal-dialog {
+    margin-left: 150px;
+    margin-top: 75px;
+  }
+  .modal-open .gal-item .modal-body{
+    padding: 0px;
+    width: 200%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gal-container .modal.fade .modal-dialog {
+    margin-left: 250px;
+    margin-top: 75px;
+  }
+  .modal-open .gal-item .modal-body{
+    padding: 0px;
+    width: 250%;
+  }
+}
+
+.gal-container{
+    padding-top :75px;
+    padding-bottom:75px;
+}
+
+.item-gal{
+  padding: 0px;
+  width: 400px;
+  height: 100%;
+  margin: 10px 30px 10px 30px;
+}
+
+
+.gal img{ width: 100%; padding: 7px 0;}
+
+.gal {
+	-ms-column-count: 3;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	}
+
+
+@media (max-width: 500px) {
+		.gal {
+	-ms-column-count: 1;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	 }
+	}
