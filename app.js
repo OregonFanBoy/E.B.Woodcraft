@@ -5,10 +5,12 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
 var index = require('./routes/index');
 var users = require('./routes/users');
 var about = require('./routes/about');
 var gallery = require('./routes/gallery');
+var contact = require('./routes/contact')
 var services = require('./routes/services');
 var service1 = require('./routes/service1');
 var app = express();
@@ -30,8 +32,10 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/about', about);
 app.use('/gallery', gallery);
+app.use('/contact', contact);
 app.use('/services', services);
 app.use('/services/service1', service1);
+
 
 
 // catch 404 and forward to error handler
