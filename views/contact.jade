@@ -8,7 +8,6 @@ block content
     form(id='contact', action='contact', method='post')
 
       h3 Leave Us A Message
-      | {{msg}}
       fieldset
         input(placeholder='First Name', name='firstname', type='text', tabindex='1', required='', autofocus='')
       fieldset
@@ -19,5 +18,5 @@ block content
         input(placeholder='Phone', name='phone' type='tel', tabindex='4')
       fieldset
         textarea(placeholder='Leave a message...', name='message', tabindex='5', required='')
-      fieldset
+      fieldset(style='text-align: center;')
         button(type='submit') Submit
