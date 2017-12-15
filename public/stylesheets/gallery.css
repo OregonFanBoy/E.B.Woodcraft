@@ -9,7 +9,7 @@ body{
 
 .gal-item{
 	overflow: hidden;
-	padding: 3px;
+	padding: 2px !important;
 }
 
 .gal-item .box{
@@ -184,6 +184,8 @@ body{
 }
 
 .gal-container{
+    margin-left:25px;
+    margin-right: 25px;
     padding-top :75px;
     padding-bottom:75px;
 }

@@ -3,64 +3,462 @@ extends layout
 block content
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
   link(rel='stylesheet', href='/stylesheets/gallery.css')
-  link(rel='stylesheet', href='https:////cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css')
+  link(rel='stylesheet', href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css')
   script(type='text/javascript', src='https://code.jquery.com/jquery-1.10.2.min.js')
   script(type='text/JavaScript', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
 
   section
-    .container.gal-container
-      .col-md-12
-        .row
-            //Picture 1
-            .col-md-8.col-sm-12.co-xs-12.gal-item
-              .box
-                a(href='#', data-toggle='modal', data-target='#1')
-                  img(src='/images/wood5.jpg')
-                #1.modal.fade(tabindex='-1', role='dialog')
-                  .modal-dialog(role='document')
-                    .modal-content
-                      button.close(type='button', data-dismiss='modal', aria-label='Close')
-                        span(aria-hidden='true') ×
-                      .modal-body
-                        img(src='/images/wood5.jpg')
-                      .col-md-12.description
-                        h4 This is a picture description
+    .gal-container
+      .row
+        //Picture 1
+        .col-md-8.col-sm-12.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#1')
+              img(src='/images/gallery/gal1.jpg')
+            #1.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal1.jpg')
+                  .col-md-12.description
+                    h4 This is a picture description
 
-            //Picture 2
-            .col-md-4.col-sm-6.co-xs-12.gal-item
-              .box
-                a(href='#', data-toggle='modal', data-target='#2')
-                  img(src='/images/wood2.jpg')
-                #2.modal.fade(tabindex='-1', role='dialog')
-                  .modal-dialog(role='document')
-                    .modal-content
-                      button.close(type='button', data-dismiss='modal', aria-label='Close')
-                        span(aria-hidden='true') ×
-                      .modal-body
-                        img(src='images/wood2.jpg')
+        //Picture 2
+        .col-md-4.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#2')
+              img(src='/images/gallery/gal2.jpg')
+            #2.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal2.jpg')
 
-            //Picture 3
-            .col-md-4.col-sm-6.co-xs-12.gal-item
-              .box
-                a(href='#', data-toggle='modal', data-target='#3')
-                  img(src='https://tympanus.net/Development/GammaGallery/images/medium/1.jpg')
-                #3.modal.fade(tabindex='-1', role='dialog')
-                  .modal-dialog(role='document')
-                    .modal-content
-                      button.close(type='button', data-dismiss='modal', aria-label='Close')
-                        span(aria-hidden='true') ×
-                      .modal-body
-                        img(src='https://tympanus.net/Development/GammaGallery/images/medium/1.jpg')
+        //Picture 3
+        .col-md-4.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#3')
+              img(src='/images/gallery/gal3.jpg')
+            #3.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal3.jpg')
 
-            //Picture 4
-            .col-md-6.col-sm-12.co-xs-12.gal-item
-              .box
-                a(href='#', data-toggle='modal', data-target='#4')
-                  img(src='/images/wood2.jpg')
-                #4.modal.fade(tabindex='-1', role='dialog')
-                  .modal-dialog(role='document')
-                    .modal-content
-                      button.close(type='button', data-dismiss='modal', aria-label='Close')
-                        span(aria-hidden='true') ×
-                      .modal-body
-                        img(src='images/wood2.jpg')
+        //Picture 4
+        .col-md-4.col-sm-12.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#4')
+              img(src='/images/gallery/gal5.jpg')
+            #4.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal5.jpg')
+
+        //Picture 5
+        .col-md-4.col-sm-12.co-xs-10.gal-item
+          .box
+            a(href='#',data-toggle='modal', data-target='#5')
+              img(src='/images/gallery/gal4.jpg')
+            #5.modal.fade(tabindex='-1',role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal4.jpg')
+        //Picture 6
+        .col-md-4.col-sm-12.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#6')
+              img(src='/images/gallery/gal6.jpg')
+            #6.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal6.jpg')
+
+        //Picture 7
+        .col-md-8.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#7')
+              img(src='/images/gallery/gal7.jpg')
+            #7.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal7.jpg')
+
+        //Picture 8
+        .col-md-3.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#8')
+              img(src='/images/gallery/gal8.jpg')
+            #8.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal8.jpg')
+
+        //Picture 9
+        .col-md-6.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#9')
+              img(src='/images/gallery/gal9.jpg')
+            #9.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal9.jpg')
+
+        //Picture 10
+        .col-md-3.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#10')
+              img(src='/images/gallery/gal10.jpg')
+            #10.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal10.jpg')
+
+        //Picture 11
+        .col-md-12.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#11')
+              img(src='/images/gallery/gal12.jpg')
+            #11.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal12.jpg')
+
+        //Picture 12
+        .col-md-6.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#12')
+              img(src='/images/gallery/gal11.jpg')
+            #12.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal11.jpg')
+
+        //Picture 13
+        .col-md-6.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#13')
+              img(src='/images/gallery/gal13.jpg')
+            #13.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal13.jpg')
+
+        //Picture 14
+        .col-md-4.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#14')
+              img(src='/images/gallery/gal14.jpg')
+            #14.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal14.jpg')
+
+        //Picture 15
+        .col-md-4.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#15')
+              img(src='/images/gallery/gal15.jpg')
+            #15.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal15.jpg')
+
+        //Picture 16
+        .col-md-4.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#16')
+              img(src='/images/gallery/gal16.jpg')
+            #16.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal16.jpg')
+
+        //Picture 17
+        .col-md-7.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#17')
+              img(src='/images/gallery/gal17.jpg')
+            #17.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal17.jpg')
+
+        //Picture 18
+        .col-md-5.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#18')
+              img(src='/images/gallery/gal18.jpg')
+            #18.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal18.jpg')
+
+
+        //Picture 19
+        .col-md-3.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#19')
+              img(src='/images/gallery/gal19.jpg')
+            #19.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal19.jpg')
+
+
+        //Picture 20
+        .col-md-6.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#20')
+              img(src='/images/gallery/gal20.jpg')
+            #20.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal20.jpg')
+
+
+        //Picture 21
+        .col-md-3.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#21')
+              img(src='/images/gallery/gal21.jpg')
+            #21.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal21.jpg')
+
+
+        //Picture 22
+        .col-md-5.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#22')
+              img(src='/images/gallery/gal22.jpg')
+            #22.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal22.jpg')
+
+        //Picture 23
+        .col-md-2.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#23')
+              img(src='/images/gallery/gal23.jpg')
+            #23.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal23.jpg')
+
+
+        //Picture 24
+        .col-md-3.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#24')
+              img(src='/images/gallery/gal24.jpg')
+            #24.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal24.jpg')
+
+        //Picture 34
+        .col-md-2.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#34')
+              img(src='/images/gallery/gal34.jpg')
+            #34.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal34.jpg')
+
+
+
+
+        //Picture 26
+        .col-md-4.col-sm-4.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#26')
+              img(src='/images/gallery/gal26.jpg')
+            #26.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal26.jpg')
+
+
+        //Picture 27
+        .col-md-2.col-sm-4.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#27')
+              img(src='/images/gallery/gal27.jpg')
+            #27.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal27.jpg')
+
+
+        //Picture 28
+        .col-md-3.col-sm-4.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#28')
+              img(src='/images/gallery/gal28.jpg')
+            #27.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal28.jpg')
+
+        //Picture 29
+        .col-md-3.col-sm-4.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#29')
+              img(src='/images/gallery/gal29.jpg')
+            #29.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal29.jpg')
+
+        //Picture 30
+        .col-md-3.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#30')
+              img(src='/images/gallery/gal30.jpg')
+            #30.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal30.jpg')
+
+        //Picture 31
+        .col-md-4.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#31')
+              img(src='/images/gallery/gal31.jpg')
+            #31.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal31.jpg')
+
+        //Picture 32
+        .col-md-2.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#32')
+              img(src='/images/gallery/gal32.jpg')
+            #32.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal32.jpg')
+
+        //Picture 33
+        .col-md-3.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#33')
+              img(src='/images/gallery/gal33.jpg')
+            #33.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal33.jpg')
+
+        //Picture 25
+        .col-md-12.col-sm-6.co-xs-12.gal-item
+          .box
+            a(href='#', data-toggle='modal', data-target='#25')
+              img(src='/images/gallery/gal25.jpg')
+            #25.modal.fade(tabindex='-1', role='dialog')
+              .modal-dialog(role='document')
+                .modal-content
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  .modal-body
+                    img(src='/images/gallery/gal25.jpg')
